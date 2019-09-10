@@ -1,7 +1,7 @@
 # Prerna-Chachare-Core-Test
 .NET Core Test
 
-## Complete test by cosidering following points as mandatory:
+## Complete test by considering following points as mandatory:
 
 * Perform CRUD operations on each table listed below
 
