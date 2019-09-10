@@ -33,3 +33,5 @@ D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\o
 D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\obj\Debug\netcoreapp2.2\ProjectManagement.csproj.CopyComplete
 D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Error.g.cshtml.cs
 D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ProjectNotFound.g.cshtml.cs
+D:\Prerna-Chachare\.NET Core Training\Test\ProjectManagement\ProjectManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ProjectManagerNotFound.g.cshtml.cs

@@ -21,7 +21,7 @@ namespace ProjectManagement.Controllers
         #region Action to List Projects
         // Action to list projects
         [Route("[action]")]
-        public IActionResult Index(int page = 1, int pageSize = 3, string search = null)
+        public IActionResult Index(int page = 1, int pageSize = 5, string search = null)
         {
             if (!string.IsNullOrEmpty(search))
             {
@@ -40,10 +40,7 @@ namespace ProjectManagement.Controllers
         {
             var project = _projectRepository.GetProjectDetails(id);
             if (project == null)
-            {
-                Response.StatusCode = 404;
-                return RedirectToAction("Error", "Home");
-            }
+                return View("ProjectNotFound");
             return View(project);
         }
         #endregion
@@ -55,8 +52,10 @@ namespace ProjectManagement.Controllers
         {
             ViewBag.ProjectManagerId = _projectRepository.GetManagerList();
             var project = _projectRepository.GetProjectDetails(id);
-            if (project == null)
+            if (id == 0)
                 project = new Project();
+            else if (project == null)
+                return View("ProjectNotFound");
             return View(project);
         }
 
@@ -90,10 +89,7 @@ namespace ProjectManagement.Controllers
         {
             var project = _projectRepository.GetProjectDetails(id);
             if (project == null)
-            {
-                Response.StatusCode = 404;
-                return RedirectToAction("Error", "Home");
-            }
+                return View("ProjectNotFound");
             return View(project);
         }
 

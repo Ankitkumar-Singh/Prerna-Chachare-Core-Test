@@ -41,10 +41,7 @@ namespace ProjectManagement.Controllers
         {
             var projectManager = _projectManagerRepository.GetProjectManagerDetails(id);
             if (projectManager == null)
-            {
-                Response.StatusCode = 404;
-                return RedirectToAction("Error", "Home");
-            }
+                return View("ProjectManagerNotFound");
             return View(projectManager);
         }
         #endregion
@@ -55,8 +52,10 @@ namespace ProjectManagement.Controllers
         public IActionResult Save(int id)
         {
             var projectManager = _projectManagerRepository.GetProjectManagerDetails(id);
-            if (projectManager == null)
+            if (id == 0)
                 projectManager = new ProjectManager();
+            else if (projectManager == null)
+                return View("ProjectManagerNotFound");
             return View(projectManager);
         }
 
@@ -94,10 +93,7 @@ namespace ProjectManagement.Controllers
         {
             var projectManager = _projectManagerRepository.GetProjectManagerDetails(id);
             if (projectManager == null)
-            {
-                Response.StatusCode = 404;
-                return RedirectToAction("Error", "Home");
-            }
+                return View("ProjectManagerNotFound");
             return View(projectManager);
         }
 
