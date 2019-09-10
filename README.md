@@ -1,14 +1,6 @@
 # Prerna-Chachare-Core-Test
 .NET Core Test
 
-## Design Project Management Database which include following details:
-
-* Project table – Name, Description, StartDate, Type(Fixed, Dedicated), IsActive, Project Manager
-
-* Project Manager Table – FirstName, LastName, Address, Email, Contact, Gender, Department
-
-* Department Enum – (Web, Mobility, Support)
-
 ## Complete test by cosidering following points as mandatory:
 
 * Perform CRUD operations on each table listed below
@@ -20,3 +12,11 @@
 * Use Dependency injection and Repository pattern and attribute routing(With token or without token)
 
 * Design form using tag helpers
+
+## Design Project Management Database which include following details:
+
+* Project table – Name, Description, StartDate, Type(Fixed, Dedicated), IsActive, Project Manager
+
+* Project Manager Table – FirstName, LastName, Address, Email, Contact, Gender, Department
+
+* Department Enum – (Web, Mobility, Support)
