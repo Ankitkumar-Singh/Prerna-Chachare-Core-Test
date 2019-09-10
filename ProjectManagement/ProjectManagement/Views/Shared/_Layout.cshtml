@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/Logo.png">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link href="~/css/Style.css" rel="stylesheet" />
+    <link href="~/css/toastr.min.css" rel="stylesheet" />
+    <link href="~/css/PagedList.css" rel="stylesheet" />
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/toastr.min.js"></script>
+    <script src="~/js/Script.js"></script>
+    <title>Project Management</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <img src="~/images/Logo.png" asp-append-version="true" width="50" height="50" />
+        <a asp-action="Index" asp-controller="Home" class="navbar-brand font-weight-bold text-dark ml-2">Project Management</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-action="Index" asp-controller="Project">Project</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-action="Index" asp-controller="ProjectManager">Project Manager</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-5 mb-3 mx-auto">
+        @RenderBody()
+    </div>
+
+    <div class="bg-light text-center p-3 fixed-bottom">&copy; All Rights Reserved.</div>
+</body>
+</html>
